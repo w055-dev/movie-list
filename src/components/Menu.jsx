@@ -2,7 +2,7 @@ import React from 'react'
 import MovieList from './MovieList'
 import MovieForm from './MovieForm'
 
-const Main = ({ movies, onAddMovie, onToggleStatus, onDeleteMovie }) => {
+const Menu = ({ movies, onAddMovie, onToggleStatus, onDeleteMovie }) => {
   const wantToWatch = movies.filter(movie => movie.status === 'want')
   const watched = movies.filter(movie => movie.status === 'watched')
   return (
@@ -30,4 +30,4 @@ const Main = ({ movies, onAddMovie, onToggleStatus, onDeleteMovie }) => {
   )
 }
 
-export default Main
+export default Menu

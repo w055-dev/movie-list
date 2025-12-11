@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Main from './components/Main'
+import Menu from './components/Menu'
 import './index.css'
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
       <header className="header">
         <h1>Список фильмов</h1>
       </header>
-      <Main
+      <Menu
         movies={movies}
         onAddMovie={addMovie}
         onToggleStatus={toggleStatus}
